@@ -1,0 +1,15 @@
+.controls {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.controls-toggle {
+    text-align: center;
+}
+
+@media (min-width:480px) {
+    .controls-toggle {
+        text-align: right;
+    }
+}

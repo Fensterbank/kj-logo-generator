@@ -1,0 +1,11 @@
+.logo {
+    margin: 0 auto;
+    border: 1px solid #333;
+    background-image: url('./background.png');
+    margin: 0 5px;
+    display: flex;
+}
+
+.logo canvas {
+    width: 100%;
+}
