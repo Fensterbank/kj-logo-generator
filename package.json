@@ -1,7 +1,9 @@
 {
   "name": "kj-logo-generator",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "author": "Frédéric Bolvin <frederic@bol.vin> (https://github.com/Fensterbank)",
+  "license": "MIT",
   "dependencies": {
     "file-saver": "^1.3.3",
     "office-ui-fabric-react": "^5.40.0",
@@ -19,5 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fensterbank/kj-logo-generator"
   }
 }
