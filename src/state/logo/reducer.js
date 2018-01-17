@@ -3,7 +3,7 @@ import * as t from './actionTypes';
 const initialState = {
     text: 'Kolpingjugend Deutschland',
     transparent: true,
-    fontSize: 90
+    fontSize: 90,
 }
 
 export default function reducer(state = initialState, action) {

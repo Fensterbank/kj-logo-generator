@@ -44,13 +44,13 @@ class Controls extends Component {
 const mapStateToProps = state => ({
     text: logo.selectors.getText(state),
     transparent: logo.selectors.getTransparent(state),
-    fontSize: logo.selectors.getFontSize(state)
+    fontSize: logo.selectors.getFontSize(state),
 });
 
 const mapDispatchToProps = dispatch => ({
     setText: (text) => dispatch(logo.actions.setText(text)),
     setTransparent: (transparent) => dispatch(logo.actions.setTransparent(transparent)),
-    setFontSize: (fontSize) => dispatch(logo.actions.setFontSize(fontSize))
+    setFontSize: (fontSize) => dispatch(logo.actions.setFontSize(fontSize)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Controls);

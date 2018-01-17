@@ -4,7 +4,7 @@ import rootReducer from './rootReducer';
 
 const composeEnhancers = composeWithDevTools({
     name: 'kj-logo-generator',
-    serialize: true
+    serialize: true,
 });
 
 const middleware = [];

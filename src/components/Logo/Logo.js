@@ -16,7 +16,7 @@ class Logo extends PureComponent {
     }
 
     componentDidMount() {
-        this._context = this.canvas.getContext("2d");
+        this._context = this.canvas.getContext('2d');
         this._img = new Image();
         this._img.src = logoImg;
 
@@ -34,9 +34,9 @@ class Logo extends PureComponent {
 
         this._context.drawImage(this._img, 0, 0);
 
-        this._context.fillStyle = "black";
-        this._context.font = this.props.fontSize + 'px Tahoma, "Nimbus Sans"';
-        this._context.textBaseline = "top";
+        this._context.fillStyle = 'black';
+        this._context.font = `${this.props.fontSize}px Tahoma, "Nimbus Sans"`;
+        this._context.textBaseline = 'top';
         this._context.fillText(this.props.text, 18, 570);
         this.redraw = false;
     }
@@ -62,7 +62,7 @@ class Logo extends PureComponent {
 const mapStateToProps = state => ({
     text: logo.selectors.getText(state),
     transparent: logo.selectors.getTransparent(state),
-    fontSize: logo.selectors.getFontSize(state)
+    fontSize: logo.selectors.getFontSize(state),
 });
 
 export default connect(mapStateToProps)(Logo);

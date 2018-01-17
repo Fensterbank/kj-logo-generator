@@ -29,26 +29,26 @@ class Header extends Component {
                             {
                                 key: 'download',
                                 iconProps: {
-                                    iconName: 'Save'
+                                    iconName: 'Save',
                                 },
                                 onClick: this.onDownloadClick,
-                                name: 'Herunterladen'
-                            }
-                            
+                                name: 'Herunterladen',
+                            },
+
                         ]
                     }
                     farItems={
                         [{
-                                key: 'reset',
-                                iconProps: {
-                                    iconName: 'Refresh',
-                                    style: {
-                                        color: '#a11100'
-                                    }
+                            key: 'reset',
+                            iconProps: {
+                                iconName: 'Refresh',
+                                style: {
+                                    color: '#a11100',
                                 },
-                                onClick: this.onResetClick,
-                                name: 'Zurücksetzen'
-                            }]
+                            },
+                            onClick: this.onResetClick,
+                            name: 'Zurücksetzen',
+                        }]
                     }
                 />
             </div>
@@ -57,7 +57,7 @@ class Header extends Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-    reset: () => dispatch(logo.actions.reset())
+    reset: () => dispatch(logo.actions.reset()),
 });
 
 export default connect(null, mapDispatchToProps)(Header);
